@@ -1,67 +1,137 @@
-
-.wrapper{
+.wrapper {
   display: flex;
 }
-
-.side-bar{
-  background-color: #2f3e51;
+.side-bar {
+  background-color: #253141;
   width: 300px;
   height: 100vh;
 }
-.side-bar-header{
+.side-bar-header {
   height: 100px;
-  padding: 0px 20px;
+  padding: 0 20px;
   background-color: #253141;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.user-name a{
+.header-name a{
   font-size: 16px;
-  color: #fafafa;
+  color: #FAFAFA;
   text-decoration: none;
 }
-.chat-name a{
+.create-room a {
   font-size: 10px;
   border: 1px solid lightblue;
   padding: 14px;
   color: deepskyblue;
   text-decoration: none;
 }
-.rooms{
+.rooms {
+  background-color: #2F3E51;
   height: calc(100vh - 100px);
-  background-color: #2f3e51;
-  padding: 0px 20px;
+  padding: 0 20px;
   overflow: scroll;
 }
-.room{
+.room {
   padding: 20px 0 40px;
 }
-.room-name a{
-  color: white;
+
+.room-name a {
   text-decoration: none;
+  color: white;
 }
 
-.chat{
-  background-color: #ffffff;
+.chat {
+  background-color: #FFFFFF;
   width: calc(100vw - 300px);
 }
-.chat-header{
+.chat-header {
   height: 100px;
-  width: calc(100vw - 300px);
-  background-color: #ffffff;
   padding: 0 40px;
   display: flex;
+  justify-content: space-between;
 }
-.messages{
+.header-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.header-button {
+  margin-top: 40px;
+}
+
+.header-button a {
+  text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+}
+.messages {
+  background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
-  width: calc(100vw - 300px);
-  background-color: #fafafa;
   padding: 46px 40px 0;
+  overflow: scroll;
 }
-.form{
+.message-name{
+  margin-top: 10px;
+}
+.upper-message{
+  display: flex;
+}
+.message-user-name{
+  font-size: 16px;
+  color: #434a54;
+}
+.message-time{
+  font-size: 12px;
+  color: #999;
+  padding-left: 10px;
+}
+.message-content{
+  font-size: 14px;
+  color: #434a54;
+  margin-bottom: 40px;
+}
+.lower-message{
+  margin-top: 10px;
+}
+.form {
+  background-color: #DDDDDD;
   height: 90px;
-  width: calc(100vw - 300px);
-  background-color: #dddddd;
   padding: 20px 40px;
+  display: flex;
+}
+.form-input{
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+.text-form{
+  padding-left: 10px;
+  height: 50px;
+  width: 100%;
+  border: none;
+}
+.buttom-form{
+  font-size: 16px;
+  color: white;
+  margin-left: 15px;
+  padding: 0 20px;
+  background-color: #38aef0;
+  height: 50px;
+  border: none;
+}
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
